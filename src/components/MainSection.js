@@ -94,8 +94,8 @@ const MainSection = () => {
                                 <select className="w-full rounded-md border px-4 py-3 text-sm">
                                     <option>12th PCM Percentage</option>
                                     <option>Above 90%</option>
-                                    <option>75% – 90%</option>
-                                    <option>60% – 75%</option>
+                                    <option>75% - 90%</option>
+                                    <option>60% - 75%</option>
                                     <option>Below 60%</option>
                                 </select>
 
