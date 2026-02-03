@@ -5,6 +5,7 @@ import ProgrammeOverview from "@/components/ProgrammeOverview";
 import ProgrammeHighlights from "@/components/ProgrammeHighlights";
 import WhyUs from "@/components/WhyUs";
 import ProgrammeCurriculum from "@/components/ProgrammeCurriculum";
+import BtechSpecializations from "@/components/BtechSpecializations";
 
 export default function HomePage() {
     return (
@@ -15,6 +16,7 @@ export default function HomePage() {
             <ProgrammeHighlights />
             <WhyUs />
             <ProgrammeCurriculum />
+            <BtechSpecializations />
         </>
     );
 };
