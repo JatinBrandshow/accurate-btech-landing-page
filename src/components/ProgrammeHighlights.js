@@ -111,15 +111,15 @@ const ProgrammeHighlights = () => {
     }, []);
 
     return (
-        <section className="py-10 bg-white">
+        <section className="py-6 bg-white">
             <div className="mx-auto max-w-7xl px-6">
                 <h2 className="text-4xl font-bold text-blue-950 font-serif">Programme Highlights</h2>
 
                 {/* SLIDER */}
-                <div className="relative mt-10">
+                <div className="relative mt-4">
                     <div
                         ref={sliderRef}
-                        className="flex gap-6 overflow-x-auto pb-6 scroll-smooth [&::-webkit-scrollbar]:hidden"
+                        className="flex gap-4 overflow-x-auto scroll-smooth [&::-webkit-scrollbar]:hidden"
                         style={{
                             scrollbarWidth: "none",
                             msOverflowStyle: "none",
@@ -138,7 +138,7 @@ const ProgrammeHighlights = () => {
                     </div>
 
                     {/* ARROWS */}
-                    <div className="mt-6 flex justify-center gap-4">
+                    <div className="mt-4 flex justify-center gap-4">
                         <button
                             onClick={() => scrollByCard("left")}
                             className="rounded-full border border-blue-950 p-2 text-blue-950 hover:bg-blue-950 hover:text-white transition"
