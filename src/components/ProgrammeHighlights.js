@@ -12,6 +12,8 @@ import {
     Globe,
     Award,
     TrendingUp,
+    ChevronLeft,
+    ChevronRight,
 } from "lucide-react";
 
 /* ===== HIGHLIGHTS DATA ===== */
@@ -79,12 +81,23 @@ const highlights = [
 const ProgrammeHighlights = () => {
     const sliderRef = useRef(null);
 
+    const scrollByCard = (direction = "right") => {
+        const slider = sliderRef.current;
+        if (!slider) return;
+
+        const cardWidth = slider.children[0].offsetWidth + 24;
+        slider.scrollBy({
+            left: direction === "right" ? cardWidth : -cardWidth,
+            behavior: "smooth",
+        });
+    };
+
     useEffect(() => {
         const slider = sliderRef.current;
         if (!slider) return;
 
         const interval = setInterval(() => {
-            const cardWidth = slider.children[0].offsetWidth + 24; // card + gap
+            const cardWidth = slider.children[0].offsetWidth + 24;
             const maxScroll = slider.scrollWidth - slider.clientWidth;
 
             if (slider.scrollLeft >= maxScroll) {
@@ -92,7 +105,7 @@ const ProgrammeHighlights = () => {
             } else {
                 slider.scrollBy({ left: cardWidth, behavior: "smooth" });
             }
-        }, 3000); // 3 seconds
+        }, 3000);
 
         return () => clearInterval(interval);
     }, []);
@@ -102,8 +115,16 @@ const ProgrammeHighlights = () => {
             <div className="mx-auto max-w-7xl px-6">
                 <h2 className="text-4xl font-bold text-blue-950 font-serif">Programme Highlights</h2>
 
+                {/* SLIDER */}
                 <div className="relative mt-10">
-                    <div ref={sliderRef} className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide scroll-smooth">
+                    <div
+                        ref={sliderRef}
+                        className="flex gap-6 overflow-x-auto pb-6 scroll-smooth [&::-webkit-scrollbar]:hidden"
+                        style={{
+                            scrollbarWidth: "none",
+                            msOverflowStyle: "none",
+                        }}
+                    >
                         {highlights.map((item, index) => {
                             const Icon = item.icon;
                             return (
@@ -114,6 +135,23 @@ const ProgrammeHighlights = () => {
                                 </div>
                             );
                         })}
+                    </div>
+
+                    {/* ARROWS */}
+                    <div className="mt-6 flex justify-center gap-4">
+                        <button
+                            onClick={() => scrollByCard("left")}
+                            className="rounded-full border border-blue-950 p-2 text-blue-950 hover:bg-blue-950 hover:text-white transition"
+                        >
+                            <ChevronLeft size={20} />
+                        </button>
+                        
+                        <button
+                            onClick={() => scrollByCard("right")}
+                            className="rounded-full border border-blue-950 p-2 text-blue-950 hover:bg-blue-950 hover:text-white transition"
+                        >
+                            <ChevronRight size={20} />
+                        </button>
                     </div>
                 </div>
             </div>
