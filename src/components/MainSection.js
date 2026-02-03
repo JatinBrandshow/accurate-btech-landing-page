@@ -70,7 +70,7 @@ const MainSection = () => {
                                 <p className="text-sm opacity-90">Get guidance for B.Tech admissions</p>
                             </div>
 
-                            <form className="mt-6 space-y-4">
+                            <form className="mt-6 space-y-4 text-gray-400">
                                 <input className="w-full rounded-md border px-4 py-3 text-sm" placeholder="Name*" />
                                 <input className="w-full rounded-md border px-4 py-3 text-sm" placeholder="Email*" />
                                 <input className="w-full rounded-md border px-4 py-3 text-sm" placeholder="Phone*" />
