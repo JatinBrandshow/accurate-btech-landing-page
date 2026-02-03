@@ -65,7 +65,7 @@ const MainSection = () => {
 
                         {/* RIGHT FORM */}
                         <div className="rounded-2xl bg-white p-3 shadow-2xl">
-                            <div className="rounded-xl bg-green-600 p-4 text-white">
+                            <div className="rounded-xl bg-green-600 p-2 text-white">
                                 <h3 className="text-xl font-semibold">Talk To An Expert</h3>
                                 <p className="text-sm opacity-90">Get guidance for B.Tech admissions</p>
                             </div>
