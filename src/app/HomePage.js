@@ -1,5 +1,6 @@
 import React from "react";
 import MainSection from "@/components/MainSection";
+import AboutUs from "@/components/AboutUs";
 import Accreditation from "@/components/Accreditation";
 import ProgrammeOverview from "@/components/ProgrammeOverview";
 import ProgrammeHighlights from "@/components/ProgrammeHighlights";
@@ -15,6 +16,7 @@ export default function HomePage() {
     return (
         <>
             <MainSection />
+            <AboutUs />
             <Accreditation />
             <ProgrammeOverview />
             <ProgrammeHighlights />

@@ -31,7 +31,7 @@ const MainSection = () => {
                             </h1>
 
                             <p className="mt-3 text-lg text-gray-200">
-                                Accurate Institute of Management & Technology – Industry-Focused Engineering Education
+                                Accurate Institute of Management & Technology Industry-Focused Engineering Education
                             </p>
 
                             {/* INFO CARDS */}

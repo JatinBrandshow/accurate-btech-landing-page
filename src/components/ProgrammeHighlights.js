@@ -19,62 +19,70 @@ import {
 /* ===== HIGHLIGHTS DATA ===== */
 const highlights = [
     {
-        icon: BookOpen,
-        title: "Focused Learners Finish Faster",
-        description:
-            "The maximum tenure of the programme is 6 years; however, focused learners can complete the doctorate journey in as little as 3 years.",
-    },
-    {
-        icon: FileCheck2,
-        title: "UGC Approved Degree",
-        description:
-            "Earn a valid and UGC-approved PhD degree recognized by the Government of India, statutory bodies, and universities.",
-    },
-    {
-        icon: Briefcase,
-        title: "Careers Beyond Academia",
-        description:
-            "A PhD opens opportunities in government jobs, R&D labs, think tanks, policy-making, consulting, and industry research.",
-    },
-    {
         icon: GraduationCap,
-        title: "Eligibility for Academic Careers",
+        title: "AICTE Approved & AKTU Affiliated",
         description:
-            "A UGC-approved PhD is mandatory for roles such as Professors, Assistant Professors, and academic researchers.",
-    },
-    {
-        icon: Users,
-        title: "Expert Faculty Mentorship",
-        description: "Receive continuous guidance from experienced faculty members and dedicated research supervisors.",
-    },
-    {
-        icon: Building2,
-        title: "Industry Collaboration",
-        description:
-            "Work on industry-linked research projects that address real-world challenges and practical applications.",
-    },
-    {
-        icon: FlaskConical,
-        title: "Advanced Research Infrastructure",
-        description: "Access modern laboratories, research centers, digital libraries, and analytical research tools.",
-    },
-    {
-        icon: Globe,
-        title: "Interdisciplinary Research",
-        description:
-            "Explore interdisciplinary research opportunities that encourage innovation and holistic problem-solving.",
+            "Four-year full-time B.Tech program approved by AICTE and affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow.",
     },
     {
         icon: Award,
-        title: "Enhanced Professional Credibility",
+        title: "Established Since 2006",
         description:
-            "Strengthen your professional profile and establish authority in your domain with a doctoral qualification.",
+            "A well-established engineering program with a strong academic legacy and increasing intake reflecting student trust.",
+    },
+    {
+        icon: BookOpen,
+        title: "Industry-Relevant Specializations",
+        description:
+            "Choice of specializations including CSE, AI & ML, Data Science, IoT, Artificial Intelligence, Mechanical Engineering, and ECE.",
+    },
+    {
+        icon: FileCheck2,
+        title: "8-Semester Curriculum Structure",
+        description:
+            "Curriculum designed across eight semesters with a balance of core engineering fundamentals, specialization subjects, labs, and projects.",
+    },
+    {
+        icon: FlaskConical,
+        title: "Advanced Engineering Laboratories",
+        description:
+            "Advanced laboratories with industry-oriented equipment providing real-world exposure through modern engineering labs.",
+    },
+    {
+        icon: Briefcase,
+        title: "Experiential Learning Approach",
+        description:
+            "Strong focus on experiential learning through live projects, internships, national-level engineering competitions, and industry problem-solving.",
     },
     {
         icon: TrendingUp,
-        title: "Long-Term Career Growth",
+        title: "Value-Added Courses",
         description:
-            "Develop advanced analytical, leadership, and research skills that support sustained career progression.",
+            "Value-added courses beyond the university syllabus to bridge the gap between academics and emerging technologies.",
+    },
+    {
+        icon: Users,
+        title: "Holistic Student Development",
+        description:
+            "Emphasis on holistic development through soft skills training, seminars, mini-projects, and personality development programs.",
+    },
+    {
+        icon: Building2,
+        title: "Strong Placement Record",
+        description:
+            "Consistent placement performance with a 100% placement track record and opportunities for domestic and international roles.",
+    },
+    {
+        icon: Globe,
+        title: "Training & Placement Cell",
+        description:
+            "Dedicated Training & Placement Cell fostering strong industry–institute interaction, industry visits, workshops, and pre-placement counseling.",
+    },
+    {
+        icon: Building2,
+        title: "Green 16+ Acre Campus",
+        description:
+            "Green 16+ acre campus with modern infrastructure, sports facilities, and a vibrant student life supporting overall growth.",
     },
 ];
 
@@ -145,7 +153,7 @@ const ProgrammeHighlights = () => {
                         >
                             <ChevronLeft size={20} />
                         </button>
-                        
+
                         <button
                             onClick={() => scrollByCard("right")}
                             className="rounded-full border border-blue-950 p-2 text-blue-950 hover:bg-blue-950 hover:text-white transition"
