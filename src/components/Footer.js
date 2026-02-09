@@ -16,7 +16,7 @@ const socialLinks = [
 const Footer = () => {
     return (
         <>
-            <footer className="bg-gradient-to-br from-[#003056] via-[#01406E] to-[#003056] text-white border-t-4 border-[#FDC800]">
+            <footer className="bg-linear-to-br from-[#003056] via-[#01406E] to-[#003056] text-white border-t-4 border-[#FDC800]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Main Footer Content */}
                     <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">

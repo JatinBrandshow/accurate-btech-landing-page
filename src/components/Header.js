@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <header className="absolute top-0 left-0 w-full z-50 bg-white shadow-sm">
-            <div className="max-w-[1500px] mx-auto px-6 py-3 flex justify-between items-center">
+            <div className="max-w-375 mx-auto px-6 py-3 flex justify-between items-center">
                 
                 {/* Left: Logos */}
                 <div className="flex items-center gap-5 flex-wrap">
