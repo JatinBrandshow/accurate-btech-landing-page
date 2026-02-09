@@ -20,7 +20,6 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Main Footer Content */}
                     <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                        
                         {/* About Section */}
                         <div className="lg:col-span-1">
                             <div className="mb-4">
@@ -37,12 +36,12 @@ const Footer = () => {
                             </div>
 
                             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-                                Accurate Group of Institutions, established in 2006, is a leading educational institution offering
-                                world-class programs in Engineering, Management, Pharmacy, Architecture, Polytechnic, and Law.
-                                With a strong focus on innovation, industry relevance, and holistic development, Accurate continues
-                                to set benchmarks in higher education at both national and international levels.
+                                Accurate Group of Institutions, established in 2006, is a leading educational
+                                institution offering world-class programs in Engineering, Management, Pharmacy,
+                                Architecture, Polytechnic, and Law. With a strong focus on innovation, industry
+                                relevance, and holistic development, Accurate continues to set benchmarks in higher
+                                education at both national and international levels.
                             </p>
-
 
                             {/* Accreditation Badges */}
                             {/* <div className="flex flex-wrap gap-3">
@@ -129,7 +128,6 @@ const Footer = () => {
                     {/* Bottom Bar */}
                     <div className="border-t border-gray-700 py-6">
                         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 px-4 gap-4">
-                            
                             {/* Left Section */}
                             <div className="text-center md:text-left">
                                 <p>© 2025 Accurate Group of Institutions. All rights reserved.</p>
