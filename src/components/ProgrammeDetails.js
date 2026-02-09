@@ -38,21 +38,20 @@ const ProgrammeDetails = () => {
                 {/* Content */}
                 <div className="mt-10 text-gray-800">
                     {/* TAB 1 CONTENT */}
+                    {/* TAB 1 CONTENT */}
                     {activeTab === "fit" && (
                         <div className="space-y-6">
                             <div>
                                 <p className="font-semibold flex gap-2">
                                     <span className="text-green-700 font-bold">|</span>
-                                    Ideal for passionate individuals and people from academic background, who are
-                                    curious to learn, explore, research and contribute in the industry / society with
-                                    advanced approaches
+                                    Ideal for students aspiring to build a strong foundation in engineering and
+                                    technology
                                 </p>
 
                                 <ul className="list-disc pl-8 mt-3 space-y-2">
                                     <li>
-                                        Unfold the new dimension of your field with research, generate new ideas and
-                                        drive socio-economic impact with research papers and as thought leader at
-                                        national / international conferences
+                                        Suitable for students who want to develop problem-solving skills, technical
+                                        knowledge, and practical exposure in their chosen engineering discipline.
                                     </li>
                                 </ul>
                             </div>
@@ -60,14 +59,13 @@ const ProgrammeDetails = () => {
                             <div>
                                 <p className="font-semibold flex gap-2">
                                     <span className="text-green-700 font-bold">|</span>
-                                    Ideal for professionals, who want to shift their career from 9 to 5 job to academic
-                                    profile
+                                    Best suited for learners aiming for industry-ready engineering careers
                                 </p>
 
                                 <ul className="list-disc pl-8 mt-3 space-y-2">
                                     <li>
-                                        Be a contributor to build a knowledge driven society. Shape young minds with
-                                        your past industrial experience and in-depth research learning.
+                                        Designed for students seeking careers in IT, core engineering industries,
+                                        startups, R&D, entrepreneurship, and emerging technology domains.
                                     </li>
                                 </ul>
                             </div>
@@ -75,17 +73,13 @@ const ProgrammeDetails = () => {
                             <div>
                                 <p className="font-semibold flex gap-2">
                                     <span className="text-green-700 font-bold">|</span>
-                                    Designed for working professional with a desire to better understand the field and
-                                    develop future insights.
+                                    Ideal for students planning higher studies or global opportunities
                                 </p>
 
                                 <ul className="list-disc pl-8 mt-3 space-y-2">
                                     <li>
-                                        Be the source of innovation and growth in respective organisation and industry
-                                    </li>
-                                    <li>
-                                        Earn recognition through valuable contribution in the industry and build a
-                                        strong network
+                                        Strong academic base and project exposure prepare students for M.Tech, MBA,
+                                        research programs, and international study opportunities.
                                     </li>
                                 </ul>
                             </div>
@@ -95,97 +89,90 @@ const ProgrammeDetails = () => {
                     {/* TAB 2 CONTENT */}
                     {activeTab === "learning" && (
                         <div className="space-y-8">
-                            {/* Knowledge Creation & Innovation */}
+                            {/* Technical Knowledge & Core Skills */}
                             <div>
                                 <p className="font-semibold text-lg flex gap-2">
                                     <span className="text-green-700 font-bold">|</span>
-                                    Knowledge Creation & Innovation
+                                    Strong Technical & Engineering Fundamentals
                                 </p>
 
                                 <ul className="list-disc pl-8 mt-3 space-y-2">
-                                    <li>Develop fresh ideas, theories, and solutions.</li>
                                     <li>
-                                        Transform yourself to gain the ability to think differently and bring new
-                                        perspectives to your field of study.
+                                        Gain in-depth understanding of core engineering subjects aligned with AKTU
+                                        curriculum.
+                                    </li>
+                                    <li>
+                                        Develop logical thinking and analytical skills to solve real-world engineering
+                                        problems.
                                     </li>
                                 </ul>
                             </div>
 
-                            {/* Research & Discovery */}
+                            {/* Practical Learning */}
                             <div>
                                 <p className="font-semibold text-lg flex gap-2">
                                     <span className="text-green-700 font-bold">|</span>
-                                    Research & Discovery
+                                    Practical & Experiential Learning
                                 </p>
 
                                 <ul className="list-disc pl-8 mt-3 space-y-2">
                                     <li>
-                                        Beyond theory, conduct research supported with data and analytics. Learn how to
-                                        conduct in-depth research and find meaningful insights.
+                                        Hands-on learning through modern laboratories, live projects, internships, and
+                                        industrial training.
                                     </li>
                                     <li>
-                                        Publish and gain national / international recognition by sharing your
-                                        discoveries with the academic and professional world.
-                                    </li>
-                                    <li>Build credibility and recognition by contributing new ideas and solutions.</li>
-                                </ul>
-                            </div>
-
-                            {/* Ethical & Social Understanding */}
-                            <div>
-                                <p className="font-semibold text-lg flex gap-2">
-                                    <span className="text-green-700 font-bold">|</span>
-                                    Ethical & Social Understanding
-                                </p>
-
-                                <ul className="list-disc pl-8 mt-3 space-y-2">
-                                    <li>
-                                        Understand how society, law, environment, technology, and economics impact
-                                        organisations and decision-making.
+                                        Exposure to real industry scenarios through workshops, seminars, and industry
+                                        visits.
                                     </li>
                                 </ul>
                             </div>
 
-                            {/* Communication & Influence */}
+                            {/* Industry Readiness */}
                             <div>
                                 <p className="font-semibold text-lg flex gap-2">
                                     <span className="text-green-700 font-bold">|</span>
-                                    Communication & Influence
+                                    Industry & Career Readiness
                                 </p>
 
                                 <ul className="list-disc pl-8 mt-3 space-y-2">
-                                    <li>Improve written and verbal communication skills.</li>
+                                    <li>Learn industry-relevant tools, technologies, and best practices.</li>
                                     <li>
-                                        Learn how to prepare reports and present ideas clearly, leading to informed
-                                        decision-making.
+                                        Placement-focused training including aptitude, technical skills, and interview
+                                        preparation.
                                     </li>
                                 </ul>
                             </div>
 
-                            {/* Advanced Research Skills */}
+                            {/* Communication & Soft Skills */}
                             <div>
                                 <p className="font-semibold text-lg flex gap-2">
                                     <span className="text-green-700 font-bold">|</span>
-                                    Advanced Research Skills
+                                    Communication & Professional Skills
                                 </p>
 
                                 <ul className="list-disc pl-8 mt-3 space-y-2">
                                     <li>
-                                        Learn how to study existing research, identify knowledge gaps, and create
-                                        impactful research questions.
+                                        Improve communication, teamwork, and leadership skills through presentations and
+                                        group projects.
+                                    </li>
+                                    <li>Build confidence for corporate environments and professional growth.</li>
+                                </ul>
+                            </div>
+
+                            {/* Innovation & Lifelong Learning */}
+                            <div>
+                                <p className="font-semibold text-lg flex gap-2">
+                                    <span className="text-green-700 font-bold">|</span>
+                                    Innovation, Ethics & Lifelong Learning
+                                </p>
+
+                                <ul className="list-disc pl-8 mt-3 space-y-2">
+                                    <li>
+                                        Develop ethical understanding, social responsibility, and sustainable
+                                        engineering practices.
                                     </li>
                                     <li>
-                                        Use different research methods to collect, analyse, and interpret data
-                                        effectively.
-                                    </li>
-                                    <li>Develop critical and analytical thinking to solve complex problems.</li>
-                                    <li>
-                                        Master statistical and research tools to handle both quantitative and
-                                        qualitative insights.
-                                    </li>
-                                    <li>
-                                        Use technology effectively — including spreadsheets, research tools, online
-                                        platforms, and communication software.
+                                        Foster innovation, creativity, and adaptability for long-term career success.
                                     </li>
                                 </ul>
                             </div>

@@ -6,23 +6,43 @@ import React, { useState } from "react";
 const curriculumData = [
     {
         year: "1st Year",
-        title: "Coursework",
-        points: ["Research Foundation", "Domain Specific Coursework", "Communication Skills"],
+        title: "Engineering Fundamentals",
+        points: [
+            "Applied Mathematics & Engineering Physics",
+            "Basic Electrical, Electronics & Mechanical Engineering",
+            "Programming Fundamentals & Engineering Graphics",
+            "Communication Skills & Environmental Studies",
+        ],
     },
     {
         year: "2nd Year",
-        title: "Advanced Studies",
-        points: ["Advanced Domain Subjects", "Research Methodology", "Industry Exposure"],
+        title: "Core Engineering Subjects",
+        points: [
+            "Core Discipline Subjects as per Branch",
+            "Data Structures / Circuits / Mechanics (Branch-wise)",
+            "Laboratory Work & Practical Sessions",
+            "Mini Projects & Skill Development Modules",
+        ],
     },
     {
         year: "3rd Year",
-        title: "Specialization",
-        points: ["Specialized Electives", "Case Study Analysis", "Mini Project"],
+        title: "Specialization & Applied Learning",
+        points: [
+            "Advanced Specialization Subjects",
+            "Industry-Oriented Electives",
+            "Live Projects & Case Studies",
+            "Internships & Industrial Exposure",
+        ],
     },
     {
         year: "4th Year",
-        title: "Final Year",
-        points: ["Major Project", "Internship / Industrial Training", "Dissertation & Viva"],
+        title: "Professional Readiness",
+        points: [
+            "Major Project / Capstone Project",
+            "Industry Internship / Industrial Training",
+            "Entrepreneurship & Innovation Exposure",
+            "Placement Preparation & Professional Development",
+        ],
     },
 ];
 

@@ -11,27 +11,30 @@ const AdmissionProcess = () => {
     const steps = [
         {
             icon: FileText,
-            title: "Apply Online",
+            title: "Check Eligibility & Apply",
             description:
-                "Fill out the online application form with your academic details and upload required documents",
+                "Ensure eligibility as per AKTU & AICTE guidelines and submit the application form with required academic documents.",
             color: "from-blue-600 to-cyan-600",
         },
         {
-            icon: PenTool,
-            title: "Entrance Exam",
-            description: "Appear for CAT/MAT/CMAT/XAT or our institutional entrance test",
+            icon: ClipboardCheck,
+            title: "Merit-Based Evaluation",
+            description:
+                "Admissions are conducted strictly on a merit basis through the university-approved admission process.",
             color: "from-purple-600 to-pink-600",
         },
         {
-            icon: ClipboardCheck,
-            title: "Group Discussion & Interview",
-            description: "Participate in GD/PI round to showcase your communication and analytical skills",
+            icon: UserCheck,
+            title: "Counselling & Verification",
+            description:
+                "Shortlisted candidates go through counselling, document verification, and seat allotment as per AKTU norms.",
             color: "from-orange-600 to-red-600",
         },
         {
-            icon: UserCheck,
-            title: "Final Selection",
-            description: "Receive your admission offer and complete the enrollment process",
+            icon: IndianRupee,
+            title: "Fee Submission & Confirmation",
+            description:
+                "Admission is confirmed after fee submission and completion of university formalities with full institute support.",
             color: "from-green-600 to-emerald-600",
         },
     ];
@@ -80,8 +83,8 @@ const AdmissionProcess = () => {
                         </h2>
 
                         <p className="mx-auto max-w-3xl text-xl text-gray-600">
-                            Your journey to becoming a business leader starts here. Follow these simple steps to join
-                            our MBA program
+                            Admission to the B.Tech programme is conducted on a merit basis as per AKTU and AICTE
+                            guidelines, ensuring a transparent and student-friendly process.
                         </p>
                     </motion.div>
 
