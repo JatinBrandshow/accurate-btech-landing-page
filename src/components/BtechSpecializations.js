@@ -5,16 +5,34 @@ import { useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const specialization = [
-    { title: "Internet of Things (IoT)", image: "/img/diksharambh-orientation-event-collage.webp" },
-    { title: "Embedded Systems", image: "/img/diksharambh-orientation-event-collage.webp" },
-    { title: "Artificial Intelligence & ML", image: "/img/diksharambh-orientation-event-collage.webp" },
-    { title: "Cloud Computing", image: "/img/diksharambh-orientation-event-collage.webp" },
-    { title: "Cyber Security", image: "/img/diksharambh-orientation-event-collage.webp" },
-    { title: "Data Analytics", image: "/img/diksharambh-orientation-event-collage.webp" },
-    { title: "Robotics & Automation", image: "/img/diksharambh-orientation-event-collage.webp" },
-    { title: "Industrial IoT", image: "/img/diksharambh-orientation-event-collage.webp" },
-    { title: "Smart Manufacturing", image: "/img/diksharambh-orientation-event-collage.webp" },
-    { title: "Edge Computing", image: "/img/diksharambh-orientation-event-collage.webp" },
+    {
+        title: "B.Tech in Computer Science & Engineering",
+        image: "/img/specialization/btech-in-computer-science-and-engineering.webp",
+    },
+    {
+        title: "B.Tech in Computer Science & Engineering (AI & ML)",
+        image: "/img/specialization/btech-in-computer-science-and-engineering-ai-and-ml.webp",
+    },
+    {
+        title: "B.Tech in Computer Science & Engineering (Data Science)",
+        image: "/img/specialization/btech-in-computer-science-and-engineering-data-science.webp",
+    },
+    {
+        title: "B.Tech in Computer Science & Engineering (IOT)",
+        image: "/img/specialization/btech-in-computer-science-and-engineering-iot.webp",
+    },
+    {
+        title: "B.Tech in Artificial Intelligence",
+        image: "/img/specialization/btech-in-artificial-intelligence.webp",
+    },
+    {
+        title: "B.Tech in Mechanical Engineering",
+        image: "/img/specialization/btech-in-mechanical-engineering.webp",
+    },
+    {
+        title: "B.Tech in Electronics & Communication Engineering",
+        image: "/img/specialization/btech-in-electronics-and-communication-engineering.webp",
+    },
 ];
 
 const CARD_WIDTH = 260;
@@ -52,7 +70,7 @@ const BtechSpecializations = () => {
     return (
         <section className="py-10 bg-white">
             <div className="max-w-7xl mx-auto px-6">
-                <h2 className="text-5xl font-extrabold text-[#0b1d3a] mb-4">B.Tech (IoT) Specializations</h2>
+                <h2 className="text-5xl font-extrabold text-[#0b1d3a] mb-4">B.Tech Specializations</h2>
 
                 <div className="relative overflow-hidden">
                     <div
