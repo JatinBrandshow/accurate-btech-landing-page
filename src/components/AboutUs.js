@@ -68,12 +68,25 @@ const AboutUs = () => {
                                 />
 
                                 <select className="w-full bg-white/80 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-white">
-                                    <option value="">Select Course</option>
-                                    <option>B.Tech</option>
-                                    <option>MBA</option>
-                                    <option>BCA</option>
-                                    <option>MCA</option>
-                                    <option>Diploma</option>
+                                    <option value="">Select B.Tech Specialization</option>
+
+                                    <option value="cse">B.Tech in Computer Science & Engineering</option>
+
+                                    <option value="cse-ai-ml">
+                                        B.Tech in Computer Science & Engineering (AI & ML)
+                                    </option>
+
+                                    <option value="cse-data-science">
+                                        B.Tech in Computer Science & Engineering (Data Science)
+                                    </option>
+
+                                    <option value="cse-iot">B.Tech in Computer Science & Engineering (IOT)</option>
+
+                                    <option value="artificial-intelligence">B.Tech in Artificial Intelligence</option>
+
+                                    <option value="mechanical">B.Tech in Mechanical Engineering</option>
+
+                                    <option value="ece">B.Tech in Electronics & Communication Engineering</option>
                                 </select>
 
                                 <button
