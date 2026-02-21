@@ -12,6 +12,8 @@ import AdmissionProcess from "@/components/AdmissionProcess";
 import OurRecruiters from "@/components/OurRecruiters";
 import EligibilityCriteria from "@/components/EligibilityCriteria";
 import FeeStructure from "@/components/FeeStructure";
+import CampusLife from "@/components/CampusLife";
+
 
 export default function HomePage() {
     return (
@@ -22,9 +24,10 @@ export default function HomePage() {
             <ProgrammeOverview />
             <ProgrammeHighlights />
             <WhyUs />
-            <ProgrammeCurriculum />
+            {/* <ProgrammeCurriculum /> */}
             <BtechSpecializations />
             <ProgrammeDetails />
+            <CampusLife />
             <AdmissionProcess />
             <EligibilityCriteria />
             <OurRecruiters />
