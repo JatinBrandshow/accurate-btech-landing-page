@@ -4,127 +4,136 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const hostelData = [
+    {
+        title: "Modern Living Quarters",
+        desc: "Well-furnished, ventilated rooms designed for comfort and privacy.",
+        image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=600&h=600&fit=crop",
+    },
+    {
+        title: "Nutritious Dining",
+        desc: "Hygienic mess serving multi-cuisine meals and balanced nutrition.",
+        image: "https://images.unsplash.com/photo-1544648107-160161476d91?q=80&w=600&h=600&fit=crop",
+    },
+    {
+        title: "Recreation Zones",
+        desc: "Common lounges with indoor games and relaxation spaces.",
+        image: "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?q=80&w=600&h=600&fit=crop",
+    },
+    {
+        title: "24/7 Security & High-Speed Wi-Fi",
+        desc: "Safe environment with surveillance and high-speed broadband.",
+        image: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=600&h=600&fit=crop",
+    }
+];
+
 const HostelFacilities = () => {
     return (
-        <section className="py-24 bg-white overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6">
-                <div className="flex flex-col lg:flex-row gap-16 items-center">
-
-                    {/* Content Side */}
-                    <div className="w-full lg:w-5/12 space-y-8 order-2 lg:order-1">
-                        <motion.div
-                            initial={{ opacity: 0, x: -30 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6 }}
-                        >
-                            <h2 className="text-4xl md:text-6xl font-black text-primary mb-6 leading-tight">
-                                A <span className="text-secondary italic">Home</span> Away <br /> From Home.
-                            </h2>
-                            <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                                We provide separate, high-standard residential facilities for boys and girls,
-                                designed to offer comfort, security, and a community atmosphere that supports
-                                both academic focus and personal growth.
-                            </p>
-                        </motion.div>
-
-                        {/* Facility Grid - Custom Layout */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            {[
-                                { title: "Secure Living", desc: "24/7 CCTV surveillance & professional security staff." },
-                                { title: "Nutritious Dining", desc: "Modern mess providing healthy, multi-cuisine meals." },
-                                { title: "Recreation Zones", desc: "Dedicated spaces for indoor games and relaxation." },
-                                { title: "Wi-Fi Campus", desc: "High-speed internet connectivity in every room." }
-                            ].map((item, idx) => (
-                                <motion.div
-                                    key={idx}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: idx * 0.1 }}
-                                    className="border-l-4 border-secondary pl-4 group"
-                                >
-                                    <h4 className="text-primary font-black text-lg group-hover:text-secondary transition-colors uppercase tracking-tight">
-                                        {item.title}
-                                    </h4>
-                                    <p className="text-gray-500 text-sm leading-snug">{item.desc}</p>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Image Side - Mosaic Gallery */}
-                    <div className="w-full lg:w-7/12 order-1 lg:order-2">
-                        <div className="relative grid grid-cols-12 gap-4 h-[500px] md:h-[650px]">
-
-                            {/* Primary Room View - Clean Room */}
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 0.8 }}
-                                className="col-span-12 md:col-span-8 relative rounded-[2.5rem] overflow-hidden shadow-2xl z-10"
-                            >
-                                <Image
-                                    src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=2070"
-                                    alt="Clean Modern Room"
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-[10px] font-black tracking-widest text-primary uppercase">
-                                    Pristine Living Quarters
-                                </div>
-                            </motion.div>
-
-                            {/* Lobby/Common Area View - Clean Lobby */}
-                            <motion.div
-                                initial={{ opacity: 0, x: 20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.8, delay: 0.3 }}
-                                className="hidden md:block md:col-span-4 relative rounded-[2rem] overflow-hidden shadow-xl border-4 border-white z-20"
-                            >
-                                <Image
-                                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070"
-                                    alt="Clean Modern Lobby"
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute inset-0 bg-secondary/10" />
-                            </motion.div>
-
-                            {/* Study/Social View - Clean Study Area */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, delay: 0.5 }}
-                                className="col-span-12 h-40 md:h-52 relative rounded-[2.5rem] overflow-hidden shadow-2xl z-10 mt-2"
-                            >
-                                <Image
-                                    src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=2025"
-                                    alt="Clean Study Space"
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute inset-0 bg-primary/20" />
-                                <div className="absolute right-8 bottom-6 text-white text-right">
-                                    <p className="text-xs font-bold uppercase tracking-widest text-white/80 mb-1">Hygienic Environment</p>
-                                    <h5 className="text-xl font-black">Spaces That Inspire Focus</h5>
-                                </div>
-                            </motion.div>
-
-                            {/* Overlapping Info Box - repositioned for mosaic */}
-                            <motion.div
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                transition={{ duration: 0.6, delay: 0.7 }}
-                                className="absolute -bottom-4 -left-6 lg:-left-12 bg-secondary p-6 rounded-3xl text-primary shadow-2xl z-30 hidden xl:block max-w-[200px]"
-                            >
-                                <div className="text-3xl font-black mb-1">100%</div>
-                                <div className="text-[10px] font-black leading-tight uppercase tracking-widest opacity-80">
-                                    Power Backup & Water Supply
-                                </div>
-                            </motion.div>
-                        </div>
-                    </div>
-
+        <section className="py-24 bg-gray-50 overflow-hidden">
+            <div className="max-w-8xl mx-auto px-6">
+                {/* Header Section */}
+                <div className="mb-16 relative">
+                    <motion.span
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        className="text-secondary font-black tracking-widest uppercase text-sm mb-4 block"
+                    >
+                        Residential Life
+                    </motion.span>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        className="text-4xl md:text-6xl font-black text-primary leading-tight"
+                    >
+                        Hostel <span className="text-secondary italic font-black">Facilities.</span>
+                    </motion.h2>
+                    <p className="mt-6 text-gray-500 max-w-2xl text-lg leading-relaxed">
+                        Experience a safe, comfortable, and vibrant residential life on campus.
+                        A perfect environment to grow, learn, and make lifelong friends.
+                    </p>
                 </div>
+
+                {/* Facilities Grid - 4 in a row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {hostelData.map((item, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.1 }}
+                            className="group relative flex flex-col h-full bg-white rounded-[2rem] p-4 border border-gray-100/50 hover:shadow-2xl hover:shadow-secondary/5 transition-all duration-500"
+                        >
+                            {/* Image Container */}
+                            <div className="relative aspect-square rounded-[1.5rem] overflow-hidden mb-6">
+                                <Image
+                                    src={item.image}
+                                    alt={item.title}
+                                    width={600}
+                                    height={600}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+
+                                {/* Badge */}
+                                <div className="absolute top-4 left-4">
+                                    <span className="bg-white/90 backdrop-blur-sm text-primary text-[10px] font-black tracking-tighter px-3 py-1 rounded-full uppercase">
+                                        Facility 0{index + 1}
+                                    </span>
+                                </div>
+                            </div>
+
+                           
+                            {/* <div className="flex-grow space-y-3 px-2">
+                                <h3 className="text-xl font-black text-primary leading-tight group-hover:text-secondary transition-colors duration-300">
+                                    {item.title}
+                                </h3>
+                                <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">
+                                    {item.desc}
+                                </p>
+                            </div> */}
+
+                           
+                            {/* <div className="mt-6 px-2 flex justify-end">
+                                <div className="w-8 h-8 rounded-full border border-secondary/20 flex items-center justify-center group-hover:bg-secondary group-hover:border-secondary transition-all duration-300">
+                                    <svg
+                                        className="w-4 h-4 text-secondary group-hover:text-white transform group-hover:translate-x-0.5 transition-all"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </div>
+                            </div> */}
+                        </motion.div>
+                    ))}
+                </div>
+
+                {/* Additional Info / Social Proof */}
+                {/* <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    className="mt-16 pt-12 border-t border-gray-100 flex flex-wrap justify-between items-center gap-8"
+                >
+                    <div className="flex items-center gap-4">
+                        <div className="text-4xl font-black text-primary">100%</div>
+                        <div className="text-xs font-black uppercase tracking-[0.2em] text-gray-400">
+                            Safe & Secure <br /> Environment
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                        <div className="text-4xl font-black text-primary">24/7</div>
+                        <div className="text-xs font-black uppercase tracking-[0.2em] text-gray-400">
+                            Power Backup <br /> & Water
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                        <div className="text-4xl font-black text-primary">Separate</div>
+                        <div className="text-xs font-black uppercase tracking-[0.2em] text-gray-400">
+                            Boys & Girls <br /> Hostels
+                        </div>
+                    </div>
+                </motion.div> */}
             </div>
         </section>
     );

@@ -4,133 +4,122 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const libraryData = [
+    {
+        title: "Digital Research Hub",
+        desc: "Access to IEEE, Springer, and global e-journals.",
+        image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=600&h=600&fit=crop",
+    },
+    {
+        title: "Reading Sanctuary",
+        desc: "Quiet zones designed for deep focus and academic research.",
+        image: "https://images.unsplash.com/photo-1507738911748-9c7846274f3d?q=80&w=600&h=600&fit=crop",
+    },
+    {
+        title: "Reference Wing",
+        desc: "Extensive collection of engineering and tech manuscripts.",
+        image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=600&h=600&fit=crop",
+    },
+    {
+        title: "Digital Archive",
+        desc: "Seamless RFID-based book tracking and search system.",
+        image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=600&h=600&fit=crop",
+    }
+];
+
 const LibrarySection = () => {
     return (
-        <section className="relative py-24 bg-[#0b1d3a] overflow-hidden">
-            {/* Background Decorative Element */}
-            <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-white/[0.03] to-transparent pointer-events-none" />
-
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-
-                    {/* Image Side - Collage with a specific style */}
-                    <div className="w-full lg:w-1/2">
-                        <div className="relative">
-                            {/* Main Background Image - Large Vertical */}
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.95 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 0.8 }}
-                                className="relative h-[600px] rounded-[3rem] overflow-hidden border-2 border-white/10 shadow-2xl"
-                            >
-                                <Image
-                                    src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070"
-                                    alt="Central Library"
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute inset-0 bg-linear-to-t from-[#0b1d3a] via-[#0b1d3a]/20 to-transparent" />
-                            </motion.div>
-
-                            {/* Floating Digital Badge */}
-                            <motion.div
-                                initial={{ opacity: 0, x: 20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ delay: 0.4 }}
-                                className="absolute -right-8 top-1/4 bg-[#fbbf24] p-6 rounded-3xl shadow-2xl hidden md:block max-w-[200px]"
-                            >
-                                <div className="text-primary font-black text-3xl mb-1 italic">LIBRARY</div>
-                                <p className="text-primary/70 text-xs font-bold uppercase tracking-widest leading-tight">
-                                    Access to 10M+ Digital Research Papers & Journals
-                                </p>
-                            </motion.div>
-
-                            {/* Bottom Floating Stats */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.6 }}
-                                className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-4/5 bg-white p-6 rounded-[2rem] shadow-2xl flex justify-around items-center"
-                            >
-                                <div className="text-center">
-                                    <div className="text-primary font-black text-2xl">50,000+</div>
-                                    <div className="text-gray-400 text-[10px] font-bold uppercase tracking-widest">Volumes</div>
-                                </div>
-                                <div className="w-[1px] h-8 bg-gray-100" />
-                                <div className="text-center">
-                                    <div className="text-primary font-black text-2xl">500+</div>
-                                    <div className="text-gray-400 text-[10px] font-bold uppercase tracking-widest">Seating</div>
-                                </div>
-                                <div className="w-[1px] h-8 bg-gray-100" />
-                                <div className="text-center">
-                                    <div className="text-primary font-black text-2xl">24/7</div>
-                                    <div className="text-gray-400 text-[10px] font-bold uppercase tracking-widest">Online Access</div>
-                                </div>
-                            </motion.div>
-                        </div>
-                    </div>
-
-                    {/* Content Side */}
-                    <div className="w-full lg:w-1/2 space-y-10">
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
-                        >
-                            <span className="text-secondary font-black tracking-widest uppercase text-sm mb-4 block">Knowledge Hub</span>
-                            <h2 className="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
-                                The Fountainhead <br />
-                                <span className="text-secondary">Of Wisdom.</span>
-                            </h2>
-                            <p className="text-white/70 text-lg leading-relaxed text-justify">
-                                Our central library is more than just a collection of books; it's a modern research
-                                sanctuary designed for the digital age. From rare engineering manuscripts to the latest
-                                global software journals, everything you need is right at your fingertips.
-                            </p>
-                        </motion.div>
-
-                        {/* Custom Icon List */}
-                        <div className="space-y-6">
-                            {[
-                                { title: "Global E-Resources", desc: "Access to IEEE, J-Gate, and Springer journals from anywhere on campus." },
-                                { title: "Automated Circulation", desc: "Advanced RFID-based book tracking for seamless borrowing and returns." },
-                                { title: "Silent Study Zones", desc: "Comfortable, noise-isolated areas designed for deep research and focus." }
-                            ].map((feature, idx) => (
-                                <motion.div
-                                    key={idx}
-                                    initial={{ opacity: 0, x: 20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: 0.2 * idx }}
-                                    className="group flex items-start gap-4"
-                                >
-                                    <div className="mt-1 w-2 h-2 rounded-full bg-secondary shrink-0 group-hover:scale-150 transition-transform" />
-                                    <div>
-                                        <h4 className="text-white font-bold text-xl mb-1">{feature.title}</h4>
-                                        <p className="text-white/50 text-sm leading-relaxed">{feature.desc}</p>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-
-                        <div className="pt-4">
-                            <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="border-2 border-secondary text-secondary px-10 py-4 rounded-xl font-black text-lg hover:bg-secondary hover:text-primary transition-all uppercase tracking-widest"
-                            >
-                                Explore Catalog
-                            </motion.button>
-                        </div>
-                    </div>
-
+        <section className="py-24 bg-[#0b1d3a] overflow-hidden">
+            <div className="max-w-8xl mx-auto px-6">
+                {/* Header Section */}
+                <div className="mb-16 relative">
+                    <motion.span
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        className="text-secondary font-black tracking-widest uppercase text-sm mb-4 block"
+                    >
+                        Knowledge Center
+                    </motion.span>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        className="text-4xl md:text-6xl font-black text-white leading-tight"
+                    >
+                        Central <span className="text-secondary italic font-black">Library.</span>
+                    </motion.h2>
+                    <p className="mt-6 text-white/60 max-w-2xl text-lg leading-relaxed">
+                        A modern research sanctuary housing over 50,000 volumes and providing
+                        access to millions of digital journals and research papers globally.
+                    </p>
                 </div>
-            </div>
 
-            {/* Background Decorative Large Text */}
-            <div className="absolute left-0 bottom-0 pointer-events-none select-none overflow-hidden h-32">
-                <span className="text-[10rem] font-black text-white/[0.02] leading-none tracking-tighter uppercase block transform translate-y-12">
-                    Research & Reference
-                </span>
+                {/* Library Grid - 4 in a row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {libraryData.map((item, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.1 }}
+                            className="group relative flex flex-col h-full bg-white/5 rounded-[2rem] p-4 border border-white/10 hover:shadow-2xl hover:shadow-secondary/5 transition-all duration-500"
+                        >
+                            {/* Image Container */}
+                            <div className="relative aspect-square rounded-[1.5rem] overflow-hidden">
+                                <Image
+                                    src={item.image}
+                                    alt={item.title}
+                                    width={600}
+                                    height={600}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0b1d3a]/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+
+                                {/* Badge */}
+                                <div className="absolute top-4 left-4">
+                                    <span className="bg-[#fbbf24] text-primary text-[10px] font-black tracking-tighter px-3 py-1 rounded-full uppercase">
+                                        Collection 0{index + 1}
+                                    </span>
+                                </div>
+                            </div>
+
+                            {/* Content - Commented out to match other sections' recent patterns */}
+                            {/* <div className="mt-6 space-y-3 px-2">
+                                <h3 className="text-xl font-black text-white leading-tight group-hover:text-secondary transition-colors duration-300">
+                                    {item.title}
+                                </h3>
+                                <p className="text-white/50 text-sm leading-relaxed line-clamp-3">
+                                    {item.desc}
+                                </p>
+                            </div> */}
+                        </motion.div>
+                    ))}
+                </div>
+
+                {/* Additional Stats - Commented out to match other sections' recent patterns */}
+                {/* <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    className="mt-16 pt-12 border-t border-white/10 flex flex-wrap justify-between items-center gap-8"
+                >
+                    <div className="flex items-center gap-4">
+                        <div className="text-4xl font-black text-white">50K+</div>
+                        <div className="text-xs font-black uppercase tracking-[0.2em] text-white/40">
+                            Printed <br /> Volumes
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                        <div className="text-4xl font-black text-white">10M+</div>
+                        <div className="text-xs font-black uppercase tracking-[0.2em] text-white/40">
+                            Digital <br /> Resources
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                        <div className="text-4xl font-black text-white">500+</div>
+                        <div className="text-xs font-black uppercase tracking-[0.2em] text-white/40">
+                            Reading <br /> Capacity
+                        </div>
+                    </div>
+                </motion.div> */}
             </div>
         </section>
     );
