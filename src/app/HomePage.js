@@ -15,6 +15,12 @@ import FeeStructure from "@/components/FeeStructure";
 import CampusLife from "@/components/CampusLife";
 import TechLabs from "@/components/TechLabs";
 import LectureHalls from "@/components/LectureHalls";
+import HostelFacilities from "@/components/HostelFacilities";
+import LibrarySection from "@/components/LibrarySection";
+import SportsGallery from "@/components/SportsGallery";
+
+
+
 
 
 
@@ -34,6 +40,9 @@ export default function HomePage() {
             <CampusLife />
             <TechLabs />
             <LectureHalls />
+            <HostelFacilities />
+            <LibrarySection />
+            <SportsGallery />
             <AdmissionProcess />
             <EligibilityCriteria />
             <OurRecruiters />
