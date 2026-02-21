@@ -57,7 +57,7 @@ const CampusLife = () => {
                 <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-600 rounded-full blur-[120px]" />
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <div className="max-w-8xl mx-auto px-6 relative z-10">
                 <div className="text-center mb-16">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -75,14 +75,14 @@ const CampusLife = () => {
                     </motion.div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {campusHighlights.map((item, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group relative h-[450px] rounded-[2.5rem] overflow-hidden cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500"
+                            className="group relative h-[400px] rounded-[2rem] overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-all duration-500"
                         >
                             <Image
                                 src={item.image}
@@ -90,37 +90,30 @@ const CampusLife = () => {
                                 fill
                                 className="object-cover transition-transform duration-1000 group-hover:scale-110"
                             />
-                            {/* Gradient Overlay for Text Readability - slightly lighter then before */}
-                            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
+                            {/* Gradient Overlay for Text Readability */}
+                            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300" />
 
                             {/* Content */}
-                            <div className="absolute inset-0 p-10 flex flex-col justify-end translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                                <div className="flex items-center gap-4 mb-4">
-                                    <div className="w-14 h-14 rounded-2xl bg-blue-500/20 backdrop-blur-xl border border-white/30 flex items-center justify-center text-blue-400">
+                            <div className="absolute inset-0 p-6 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <div className="flex flex-col gap-3 mb-2">
+                                    <div className="w-12 h-12 rounded-xl bg-blue-500/20 backdrop-blur-xl border border-white/30 flex items-center justify-center text-blue-400">
                                         {item.icon}
                                     </div>
-                                    <h3 className="text-2xl md:text-3xl font-black text-white uppercase tracking-wide">
+                                    <h3 className="text-xl md:text-2xl font-black text-white uppercase tracking-wide leading-tight">
                                         {item.title}
                                     </h3>
                                 </div>
 
-                                <p className="text-gray-200 leading-relaxed text-base md:text-lg opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
+                                {/* <p className="text-gray-200 leading-relaxed text-sm md:text-base opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100 line-clamp-4">
                                     {item.description}
-                                </p>
-
-                                {/* <div className="mt-6 flex items-center gap-2 text-blue-400 font-black text-lg opacity-0 group-hover:opacity-100 transition-all duration-300 delay-200">
-                                    <span>Explore Now</span>
-                                    <svg className="w-6 h-6 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                    </svg>
-                                </div> */}
+                                </p> */}
                             </div>
                         </motion.div>
                     ))}
                 </div>
 
                 {/* Bottom Gallery Call to Action */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.5 }}
@@ -129,7 +122,7 @@ const CampusLife = () => {
                     <button className="px-12 py-5 rounded-2xl bg-primary text-white font-black text-xl hover:bg-blue-900 transition-all shadow-xl hover:shadow-primary/20 scale-100 active:scale-95">
                         VIEW FULL CAMPUS GALLERY
                     </button>
-                </motion.div>
+                </motion.div> */}
             </div>
         </section>
     );
