@@ -13,6 +13,8 @@ import OurRecruiters from "@/components/OurRecruiters";
 import EligibilityCriteria from "@/components/EligibilityCriteria";
 import FeeStructure from "@/components/FeeStructure";
 import CampusLife from "@/components/CampusLife";
+import TechLabs from "@/components/TechLabs";
+
 
 
 export default function HomePage() {
@@ -28,6 +30,7 @@ export default function HomePage() {
             <BtechSpecializations />
             <ProgrammeDetails />
             <CampusLife />
+            <TechLabs />
             <AdmissionProcess />
             <EligibilityCriteria />
             <OurRecruiters />
