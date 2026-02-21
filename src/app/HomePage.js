@@ -14,6 +14,8 @@ import EligibilityCriteria from "@/components/EligibilityCriteria";
 import FeeStructure from "@/components/FeeStructure";
 import CampusLife from "@/components/CampusLife";
 import TechLabs from "@/components/TechLabs";
+import LectureHalls from "@/components/LectureHalls";
+
 
 
 
@@ -31,6 +33,7 @@ export default function HomePage() {
             <ProgrammeDetails />
             <CampusLife />
             <TechLabs />
+            <LectureHalls />
             <AdmissionProcess />
             <EligibilityCriteria />
             <OurRecruiters />
