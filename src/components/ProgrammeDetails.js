@@ -13,24 +13,24 @@ const ProgrammeDetails = () => {
                     <button
                         onClick={() => setActiveTab("fit")}
                         className={`text-4xl font-bold py-4 relative transition flex justify-center
-                            ${activeTab === "fit" ? "text-green-700" : "text-gray-900"}
+                            ${activeTab === "fit" ? "text-primary" : "text-gray-900"}
                         `}
                     >
                         Programme is Best Fit For?
                         {activeTab === "fit" && (
-                            <span className="absolute left-1/2 -bottom-1 h-1 w-full -translate-x-1/2 bg-green-700"></span>
+                            <span className="absolute left-1/2 -bottom-1 h-1 w-full -translate-x-1/2 bg-secondary"></span>
                         )}
                     </button>
 
                     <button
                         onClick={() => setActiveTab("learning")}
                         className={`text-4xl font-bold py-4 relative transition flex justify-center
-                            ${activeTab === "learning" ? "text-green-700" : "text-gray-900"}
+                            ${activeTab === "learning" ? "text-primary" : "text-gray-900"}
                         `}
                     >
                         Programme Learnings
                         {activeTab === "learning" && (
-                            <span className="absolute left-1/2 -bottom-1 h-1 w-full -translate-x-1/2 bg-green-700"></span>
+                            <span className="absolute left-1/2 -bottom-1 h-1 w-full -translate-x-1/2 bg-secondary"></span>
                         )}
                     </button>
                 </div>
@@ -43,7 +43,7 @@ const ProgrammeDetails = () => {
                         <div className="space-y-6">
                             <div>
                                 <p className="font-semibold flex gap-2">
-                                    <span className="text-green-700 font-bold">|</span>
+                                    <span className="text-primary font-bold">|</span>
                                     Ideal for students aspiring to build a strong foundation in engineering and
                                     technology
                                 </p>

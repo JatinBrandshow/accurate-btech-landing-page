@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
 
 const recruiters = [
     { name: "Deloitte", image: "/img/our-recuiters/deloitte.webp" },
@@ -39,109 +38,49 @@ const recruiters = [
 ];
 
 const OurRecruiters = () => {
-    const [images, setImages] = useState(recruiters);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setImages((prevImages) => {
-                const updated = [...prevImages];
-
-                // Pick two different random indexes
-                const i1 = Math.floor(Math.random() * updated.length);
-                let i2 = Math.floor(Math.random() * updated.length);
-
-                while (i2 === i1) {
-                    i2 = Math.floor(Math.random() * updated.length);
-                }
-
-                // Swap ONLY two images (keeps uniqueness)
-                const temp = updated[i1];
-                updated[i1] = updated[i2];
-                updated[i2] = temp;
-
-                console.log(
-                    `%cShuffled → Swapped: ${updated[i1].name} ↔ ${updated[i2].name}`,
-                    "color: green; font-weight: bold;"
-                );
-
-                return updated;
-            });
-        }, 2000);
-
-        return () => clearInterval(interval);
-    }, []);
-
-    // Pyramid Pattern: [1, 3, 5, 7]
-    const rows = [1, 3, 5, 7];
-
-    let i = 0;
     return (
         <>
             <section className="bg-linear-to-br from-blue-50 to-indigo-50 p-8 md:p-12 border border-blue-100">
-                <div className="text-center mb-8">
-                    <h3 className="text-3xl font-semibold text-gray-900 mb-2">Our Esteemed Recruiters</h3>
-                    <p className="text-gray-600">Leading companies trust Accurate graduates</p>
-                </div>
-
-                <div className="flex flex-col items-center gap-4 max-sm:hidden max-md:hidden">
-                    {rows.map((count, rowIndex) => (
-                        <div
-                            key={rowIndex}
-                            className="grid gap-4"
-                            style={{
-                                gridTemplateColumns: `repeat(${count}, minmax(0, 1fr))`,
-                            }}
-                        >
-                            {[...Array(count)].map((_, col) => {
-                                const recruiter = images[i % images.length];
-                                i++;
-
-                                return (
-                                    <div
-                                        key={col}
-                                        className="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex justify-center items-center h-28 w-28 hover:shadow-md transition"
-                                    >
-                                        <Image
-                                            src={recruiter.image}
-                                            alt={recruiter.name}
-                                            width={120}
-                                            height={120}
-                                            className="object-contain transition duration-300"
-                                        />
-                                    </div>
-                                );
-                            })}
-                        </div>
-                    ))}
-                </div>
-                {/* MOBILE + TABLET VIEW (sm & md) */}
-                <div className="block lg:hidden">
-                    <Swiper
-                        modules={[Autoplay]}
-                        autoplay={{ delay: 2000 }}
-                        slidesPerView={3}
-                        spaceBetween={20}
-                        loop
-                        breakpoints={{
-                            0: { slidesPerView: 2 },
-                            640: { slidesPerView: 3 },
-                            768: { slidesPerView: 4 },
-                        }}
+                <div className="text-center mb-12">
+                    <motion.h3
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
                     >
-                        {recruiters.map((item, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex justify-center items-center h-24">
+                        Our Esteemed <span className="text-[#0b1d3a]">Recruiters</span>
+                    </motion.h3>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 }}
+                        className="text-gray-600 text-lg"
+                    >
+                        Leading industry giants that trust and hire graduates from Accurate Group of Institutions.
+                    </motion.p>
+                </div>
+
+                <div className="max-w-7xl mx-auto">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 items-center justify-center">
+                        {recruiters.map((recruiter, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.3, delay: index * 0.05 }}
+                                viewport={{ once: true }}
+                                className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex justify-center items-center aspect-square hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+                            >
+                                <div className="relative w-full h-full">
                                     <Image
-                                        src={item.image}
-                                        alt={item.name}
-                                        width={90}
-                                        height={90}
-                                        className="object-contain"
+                                        src={recruiter.image}
+                                        alt={recruiter.name}
+                                        fill
+                                        className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 p-2"
                                     />
                                 </div>
-                            </SwiperSlide>
+                            </motion.div>
                         ))}
-                    </Swiper>
+                    </div>
                 </div>
             </section>
         </>

@@ -40,7 +40,7 @@ const AboutUs = () => {
                     </div>
 
                     {/* RIGHT FORM (GLASS EFFECT) */}
-                    <div className="w-full lg:w-5/12">
+                    {/* <div className="w-full lg:w-5/12">
                         <div className="backdrop-blur-xl bg-white/15 border border-white/20 rounded-2xl p-6 shadow-2xl">
                             <h3 className="text-2xl font-semibold text-white mb-2">Apply for Admission</h3>
 
@@ -101,7 +101,7 @@ const AboutUs = () => {
                                 🔒 Your information is safe with us. No spam.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

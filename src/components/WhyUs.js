@@ -31,7 +31,7 @@ const WhyUs = () => {
             <div className="mx-auto max-w-350 px-6">
                 {/* Heading */}
                 <div className="max-w-3xl mb-7">
-                    <h2 className="text-4xl font-bold text-blue-950 font-serif">Why Accurate?</h2>
+                    <h2 className="text-4xl font-bold text-primary">Why Accurate?</h2>
                 </div>
 
                 {/* Grid */}
@@ -43,8 +43,8 @@ const WhyUs = () => {
                                 key={index}
                                 className="group rounded-2xl bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center gap-2"
                             >
-                                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-yellow-50 border border-yellow-200 group-hover:bg-blue-950 transition">
-                                    <Icon className="h-6 w-6 text-blue-950 group-hover:text-white transition" />
+                                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-yellow-50 border border-yellow-200 group-hover:bg-primary transition">
+                                    <Icon className="h-6 w-6 text-primary group-hover:text-white transition" />
                                 </div>
 
                                 <p className="text-base font-semibold text-gray-900 leading-snug">{item.text}</p>

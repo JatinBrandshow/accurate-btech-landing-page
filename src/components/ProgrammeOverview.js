@@ -5,7 +5,7 @@ const ProgrammeOverview = () => {
         <>
             <section className="py-6 bg-white">
                 <div className="mx-auto max-w-7xl px-6">
-                    <h2 className="text-4xl font-bold text-blue-950 font-serif">
+                    <h2 className="text-4xl font-bold text-primary">
                         Programme Overview – B.Tech (Bachelor of Technology)
                     </h2>
 

@@ -39,7 +39,7 @@ const MainSection = () => {
                                 {[
                                     ["Programme Duration", "4 Years"],
                                     ["Approval", "AICTE Approved"],
-                                    ["Specialisations", "CSE, ME, CE, ECE, EE"],
+                                    ["Specialisations", "CSE, ME, CE, ECE"],
                                     ["Eligibility", "10+2 with PCM (as per norms)"],
                                 ].map(([title, value]) => (
                                     <div
@@ -52,13 +52,22 @@ const MainSection = () => {
                                 ))}
                             </div>
 
-                            {/* ADMISSION INFO */}
-                            <div className="mt-8 max-w-sm overflow-hidden rounded-xl border border-white/20">
-                                <div className="bg-yellow-400 py-3 text-center font-semibold text-black">
-                                    B.Tech Admissions
-                                </div>
-                                <div className="bg-white py-3 text-center font-medium text-gray-800">
-                                    Apply Early for Better Opportunities
+                            {/* PLACEMENT SNAPSHOT */}
+                            <div className="mt-10">
+                                <p className="text-sm font-bold uppercase tracking-widest text-yellow-400 mb-4">Placement Snapshot</p>
+                                <div className="grid grid-cols-3 gap-4 max-w-2xl bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-2xl">
+                                    <div className="text-center border-r border-white/10 last:border-0 px-2">
+                                        <p className="text-[10px] md:text-xs text-gray-400 font-bold uppercase mb-1">Highest</p>
+                                        <p className="text-xl md:text-3xl font-black text-white">85<span className="text-sm font-medium ml-1">LPA</span></p>
+                                    </div>
+                                    <div className="text-center border-r border-white/10 last:border-0 px-2">
+                                        <p className="text-[10px] md:text-xs text-gray-400 font-bold uppercase mb-1">Average</p>
+                                        <p className="text-xl md:text-3xl font-black text-green-400">6.5<span className="text-sm font-medium ml-1 text-white/70">LPA</span></p>
+                                    </div>
+                                    <div className="text-center border-r border-white/10 last:border-0 px-2">
+                                        <p className="text-[10px] md:text-xs text-gray-400 font-bold uppercase mb-1">Lowest</p>
+                                        <p className="text-xl md:text-3xl font-black text-yellow-400">4.5<span className="text-sm font-medium ml-1 text-white/70">LPA</span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -66,8 +75,8 @@ const MainSection = () => {
                         {/* RIGHT FORM */}
                         <div className="rounded-2xl bg-white p-3 shadow-2xl">
                             <div className="rounded-xl bg-green-600 p-2 text-white">
-                                <h3 className="text-xl font-semibold">Talk To An Expert</h3>
-                                <p className="text-sm opacity-90">Get guidance for B.Tech admissions</p>
+                                <h3 className="text-xl font-semibold">Build Your Future with B.Tech</h3>
+                                <p className="text-sm opacity-90">Where Innovation Meets Opportunity!</p>
                             </div>
 
                             <form className="mt-6 space-y-4 text-gray-400">
@@ -77,11 +86,11 @@ const MainSection = () => {
 
                                 <select className="w-full rounded-md border px-4 py-3 text-sm">
                                     <option>Select B.Tech Branch</option>
-                                    <option>Computer Science Engineering</option>
-                                    <option>Mechanical Engineering</option>
-                                    <option>Civil Engineering</option>
-                                    <option>Electronics & Communication</option>
-                                    <option>Electrical Engineering</option>
+                                    <option>B.Tech in Computer Science & Engineering</option>
+                                    <option>B.Tech in Computer Science & Engineering (AI & ML)</option>
+                                    {/* <option>Civil Engineering</option> */}
+                                    <option>B.Tech in Mechanical Engineering</option>
+                                    <option>B.Tech in Electronics & Communication Engineering</option>
                                 </select>
 
                                 <select className="w-full rounded-md border px-4 py-3 text-sm">
@@ -108,7 +117,7 @@ const MainSection = () => {
                                     type="submit"
                                     className="w-full rounded-lg bg-yellow-400 py-3 font-semibold text-black transition hover:bg-yellow-500"
                                 >
-                                    Apply for B.Tech Counselling
+                                    Apply
                                 </button>
                             </form>
                         </div>

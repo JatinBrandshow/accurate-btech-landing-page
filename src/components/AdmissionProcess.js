@@ -14,28 +14,28 @@ const AdmissionProcess = () => {
             title: "Check Eligibility & Apply",
             description:
                 "Ensure eligibility as per AKTU & AICTE guidelines and submit the application form with required academic documents.",
-            color: "from-blue-600 to-cyan-600",
+            color: "from-blue-800 to-blue-950",
         },
         {
             icon: ClipboardCheck,
             title: "Merit-Based Evaluation",
             description:
                 "Admissions are conducted strictly on a merit basis through the university-approved admission process.",
-            color: "from-purple-600 to-pink-600",
+            color: "from-yellow-500 to-orange-400",
         },
         {
             icon: UserCheck,
             title: "Counselling & Verification",
             description:
                 "Shortlisted candidates go through counselling, document verification, and seat allotment as per AKTU norms.",
-            color: "from-orange-600 to-red-600",
+            color: "from-blue-700 to-indigo-900",
         },
         {
             icon: IndianRupee,
             title: "Fee Submission & Confirmation",
             description:
                 "Admission is confirmed after fee submission and completion of university formalities with full institute support.",
-            color: "from-green-600 to-emerald-600",
+            color: "from-green-600 to-green-700",
         },
     ];
 
@@ -70,14 +70,14 @@ const AdmissionProcess = () => {
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.5 }}
-                            className="mb-4 inline-block rounded-full bg-linear-to-r from-orange-600 to-red-600 px-6 py-2 text-sm text-white"
+                            className="mb-4 inline-block rounded-full bg-primary px-6 py-2 text-sm text-white"
                         >
                             Join Us
                         </motion.div>
 
                         <h2 className="mb-4 text-4xl md:text-5xl text-gray-900">
                             Admission{" "}
-                            <span className="bg-linear-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                            <span className="text-secondary">
                                 Process
                             </span>
                         </h2>
