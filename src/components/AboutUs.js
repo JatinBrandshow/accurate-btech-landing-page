@@ -18,22 +18,22 @@ const AboutUs = () => {
                     <div className="w-full lg:w-7/12">
                         {/* Heading */}
                         <h2 className="text-5xl font-bold text-white mb-2">About Accurate</h2>
-                        <p className="text-lg text-white/90 leading-relaxed mb-6">
+                        <p className="text-lg text-white/90 leading-relaxed mb-6 text-justify">
                             Accurate Institute of Management and Technology offers a B.Tech program designed to prepare
                             students for real-world engineering challenges across multiple industries.
                         </p>
 
-                        <p className="text-white/80 leading-relaxed mb-6">
+                        <p className="text-white/80 leading-relaxed mb-6 text-justify">
                             The four-year undergraduate program is structured across eight semesters, blending core
                             engineering fundamentals with advanced specialization.
                         </p>
 
-                        <p className="text-white/80 leading-relaxed mb-6">
+                        <p className="text-white/80 leading-relaxed mb-6 text-justify">
                             With experienced faculty, modern infrastructure, and strong placement support, students
                             receive both academic excellence and career readiness.
                         </p>
 
-                        <p className="text-white/80 leading-relaxed">
+                        <p className="text-white/80 leading-relaxed text-justify">
                             Accurate prepares graduates for success in engineering, technology, entrepreneurship, and
                             leadership roles.
                         </p>

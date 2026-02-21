@@ -22,7 +22,7 @@ export default function HomePage() {
             <ProgrammeOverview />
             <ProgrammeHighlights />
             <WhyUs />
-            {/* <ProgrammeCurriculum /> */}
+            <ProgrammeCurriculum />
             <BtechSpecializations />
             <ProgrammeDetails />
             <AdmissionProcess />

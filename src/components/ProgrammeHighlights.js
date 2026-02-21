@@ -136,7 +136,7 @@ const ProgrammeHighlights = () => {
                         {highlights.map((item, index) => {
                             const Icon = item.icon;
                             return (
-                                <div key={index} className="min-w-75 rounded-2xl bg-primary p-6 text-white">
+                                <div key={index} className="min-w-75 rounded-2xl bg-blue-800 p-6 text-white">
                                     <Icon className="h-10 w-10 mb-6" />
                                     <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
                                     <p className="text-sm leading-relaxed text-blue-100">{item.description}</p>
