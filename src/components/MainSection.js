@@ -39,7 +39,7 @@ const MainSection = () => {
                                 {[
                                     ["Programme Duration", "4 Years"],
                                     ["Approval", "AICTE Approved"],
-                                    ["Specialisations", "CSE, ME, CE, ECE"],
+                                    ["Specialisations", "CSE, CSE (AIML), ME, ECE"],
                                     ["Eligibility", "10+2 with PCM (as per norms)"],
                                 ].map(([title, value]) => (
                                     <div

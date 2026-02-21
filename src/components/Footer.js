@@ -80,7 +80,7 @@ const Footer = () => {
                                     </p>
                                 </div>
 
-                                <div className="flex items-center gap-3">
+                                {/* <div className="flex items-center gap-3">
                                     <Phone className="w-5 h-5 text-yellow-400 shrink-0" />
                                     <a
                                         href="tel:+919999999999"
@@ -98,7 +98,7 @@ const Footer = () => {
                                     >
                                         admissions@accurate.in
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
 
                             {/* Social Media */}
