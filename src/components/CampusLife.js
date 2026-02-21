@@ -82,13 +82,14 @@ const CampusLife = () => {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group relative h-[400px] rounded-[2rem] overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-all duration-500"
+                            className="group relative aspect-square rounded-[2rem] overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-all duration-500"
                         >
                             <Image
                                 src={item.image}
                                 alt={item.title}
-                                fill
-                                className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                                width={600}
+                                height={600}
+                                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                             />
                             {/* Gradient Overlay for Text Readability */}
                             <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300" />

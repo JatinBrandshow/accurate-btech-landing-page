@@ -7,22 +7,22 @@ import { motion } from "framer-motion";
 const LectureHalls = () => {
     const images = [
         {
-            src: "https://images.unsplash.com/photo-1497493292307-31c376b6e479?q=80&w=2071",
+            src: "https://images.unsplash.com/photo-1497493292307-31c376b6e479?q=80&w=600&h=600&fit=crop",
             title: "Main Auditorium",
             desc: "Spacious with 4K projection"
         },
         {
-            src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070",
+            src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600&h=600&fit=crop",
             title: "Interactive Hall",
             desc: "Designed for collaboration"
         },
         {
-            src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070",
+            src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&h=600&fit=crop",
             title: "Discussion Pad",
             desc: "Acoustically optimized"
         },
         {
-            src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070",
+            src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&h=600&fit=crop",
             title: "Smart Infrastructure",
             desc: "Hybrid-ready classrooms"
         }
@@ -64,13 +64,14 @@ const LectureHalls = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: idx * 0.1 }}
-                            className="group relative h-[350px] rounded-3xl overflow-hidden border-2 border-white/10 shadow-xl"
+                            className="group relative aspect-square rounded-3xl overflow-hidden border-2 border-white/10 shadow-xl"
                         >
                             <Image
                                 src={img.src}
                                 alt={img.title}
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                width={600}
+                                height={600}
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-linear-to-t from-[#0b1d3a] via-[#0b1d3a]/20 to-transparent opacity-80" />
 

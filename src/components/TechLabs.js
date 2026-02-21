@@ -9,28 +9,28 @@ const labsData = [
         name: "Advanced AI & Computing Center",
         description: "Equipped with high-performance GPU workstations and cloud-integrated systems for AI research.",
         features: ["NVIDIA RTX Workstations", "Cloud Computing Hub"],
-        image: "https://images.unsplash.com/photo-1581092921461-7d15cb8905cd?q=80&w=2070",
+        image: "https://images.unsplash.com/photo-1581092921461-7d15cb8905cd?q=80&w=600&h=600&fit=crop",
         color: "blue"
     },
     {
         name: "Precision Robotics & Manufacturing",
         description: "State-of-the-art facility featuring industrial CNC machines and automated robotic arms.",
         features: ["CNC Machining", "Robotic Arm Prototyping"],
-        image: "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2069",
+        image: "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=600&h=600&fit=crop",
         color: "gold"
     },
     {
         name: "VLSI & Embedded Systems Hub",
         description: "Advanced tools for circuit design, microcontroller programming, and IoT testing.",
         features: ["IoT Testbeds", "Circuit Prototyping"],
-        image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=2069",
+        image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=600&h=600&fit=crop",
         color: "green"
     },
     {
         name: "Cybersecurity & Blockchain Lab",
         description: "Specialized facility for digital defense, network forensics, and secure development.",
         features: ["Ethical Hacking Tools", "Blockchain Nodes"],
-        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070",
+        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&h=600&fit=crop",
         color: "purple"
     }
 ];
@@ -68,12 +68,13 @@ const TechLabs = () => {
                             className="group relative flex flex-col h-full bg-gray-50 rounded-[2rem] p-4 border border-gray-100/50 hover:shadow-2xl hover:shadow-secondary/5 transition-all duration-500"
                         >
                             {/* Image Container */}
-                            <div className="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-6">
+                            <div className="relative aspect-square rounded-[1.5rem] overflow-hidden mb-6">
                                 <Image
                                     src={lab.image}
                                     alt={lab.name}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    width={600}
+                                    height={600}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
