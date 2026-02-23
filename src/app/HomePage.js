@@ -40,9 +40,9 @@ export default function HomePage() {
             <CampusLife />
             <TechLabs />
             <LectureHalls />
-            <HostelFacilities />
             <LibrarySection />
             <SportsGallery />
+            <HostelFacilities />
             <AdmissionProcess />
             <EligibilityCriteria />
             <OurRecruiters />
