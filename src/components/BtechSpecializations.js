@@ -139,19 +139,7 @@ const BtechSpecializations = () => {
                     </div>
                 </div>
 
-                <div className="mt-16 text-center">
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="bg-green-600 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-green-700 transition-all shadow-xl hover:shadow-green-600/30 flex items-center gap-3 mx-auto"
-                    >
-                        <span>Download 2024-25 Brochure</span>
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8l-4 4-4-4M12 4v12" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 20h16" />
-                        </svg>
-                    </motion.button>
-                </div>
+               
             </div>
         </section>
     );
